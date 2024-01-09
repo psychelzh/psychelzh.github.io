@@ -6,3 +6,9 @@
 .httr-oauth
 .DS_Store
 .quarto
+
+/.quarto/
+
+/_*.local
+
+_site

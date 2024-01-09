@@ -2,18 +2,17 @@ project:
   type: website
 
 website:
-  title: "psychelzh.github.io"
+  title: "Liang's Blogs"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/psychelzh
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/psychelzh
 format:
   html:
     theme: cosmo
     css: styles.css
 
 editor: visual
-

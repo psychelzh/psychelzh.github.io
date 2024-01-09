@@ -1,0 +1,14 @@
+{
+  "hash": "ffbeb36389e19661a4a0e37e164cd299",
+  "result": {
+    "markdown": "---\ntitle: Benchmark Matrix Operations\ndate: 2024-01-09\ndate-modified: last-modified\ncategories:\n  - benchmark\n  - coding\nexecute:\n  warning: false\n---\n\n\nRecently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. So I decided to benchmark the matrix operations in different packages from [fastverse](https://fastverse.github.io/fastverse/).\n\nBasically, I setup the benchmark by using a convenient function `bench::press()`.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nrequireNamespace(\"bench\")\n```\n:::\n\n\n# Row Means\n\n\n::: {.cell hash='index_cache/html/bench-rowMeans_ede69637435f2439e29ab3ad2ca34220'}\n\n```{.r .cell-code}\nbench_rowmeans <- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data <- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = collapse::fmean(data),\n      Rfast = Rfast::colmeans(data),\n      matrixStats = matrixStats::colMeans2(data),\n      base = .colMeans(data, nrow, ncol)\n    )\n  }\n)\n```\n:::\n\n::: {.cell .column-page}\n\n```{.r .cell-code}\nplot(bench_rowmeans)\n```\n\n::: {.cell-output-display}\n![Benchmark of row means](index_files/figure-html/fig-rowmeans-1.png){#fig-rowmeans width=768}\n:::\n:::\n\n\n# Row-wise Operations\n\n\n::: {.cell hash='index_cache/html/bench-rowwise_0f1bce7e9b23120aedf5daa3eb81df87'}\n\n```{.r .cell-code}\nlibrary(collapse)\nbench_rowwise <- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data <- matrix(rnorm(nrow * ncol), nrow = nrow)\n    vec <- rnorm(ncol)\n    bench::mark(\n      collapse = data %r-% vec,\n      Rfast = Rfast::eachrow(data, vec, \"-\"),\n      base = data - rep(vec, each = nrow)\n    )\n  }\n)\n```\n:::\n\n::: {.cell .column-page}\n\n```{.r .cell-code}\nplot(bench_rowwise)\n```\n\n::: {.cell-output-display}\n![Benchmark of row-wise operations](index_files/figure-html/fig-rowwise-1.png){#fig-rowwise width=768}\n:::\n:::\n\n\n# Conclusion\n\nFrom the above figures, we will find Rfast is the fastest package for matrix operations. Previously, I have used collapse package, which is actually fast enough. But now I will switch to Rfast.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

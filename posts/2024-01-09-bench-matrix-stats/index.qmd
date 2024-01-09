@@ -1,0 +1,85 @@
+---
+title: Benchmark Matrix Operations
+date: 2024-01-09
+date-modified: last-modified
+categories:
+  - benchmark
+  - coding
+execute:
+  warning: false
+---
+
+Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. So I decided to benchmark the matrix operations in different packages from [fastverse](https://fastverse.github.io/fastverse/).
+
+Basically, I setup the benchmark by using a convenient function `bench::press()`.
+
+```{r}
+requireNamespace("bench")
+```
+
+# Row Means
+
+```{r}
+#| label: bench-rowMeans
+#| cache: true
+
+bench_rowmeans <- bench::press(
+  nrow = c(10, 100, 1000),
+  ncol = c(100, 1000, 10000),
+  {
+    data <- matrix(rnorm(nrow * ncol), nrow = nrow)
+    bench::mark(
+      collapse = collapse::fmean(data),
+      Rfast = Rfast::colmeans(data),
+      matrixStats = matrixStats::colMeans2(data),
+      base = .colMeans(data, nrow, ncol)
+    )
+  }
+)
+```
+
+```{r}
+#| label: fig-rowmeans
+#| column: page
+#| fig-cap: Benchmark of row means
+#| fig-width: 8
+#| fig-height: 5
+
+plot(bench_rowmeans)
+```
+
+# Row-wise Operations
+
+```{r}
+#| label: bench-rowwise
+#| cache: true
+
+library(collapse)
+bench_rowwise <- bench::press(
+  nrow = c(10, 100, 1000),
+  ncol = c(100, 1000, 10000),
+  {
+    data <- matrix(rnorm(nrow * ncol), nrow = nrow)
+    vec <- rnorm(ncol)
+    bench::mark(
+      collapse = data %r-% vec,
+      Rfast = Rfast::eachrow(data, vec, "-"),
+      base = data - rep(vec, each = nrow)
+    )
+  }
+)
+```
+
+```{r}
+#| label: fig-rowwise
+#| column: page
+#| fig-cap: Benchmark of row-wise operations
+#| fig-width: 8
+#| fig-height: 5
+
+plot(bench_rowwise)
+```
+
+# Conclusion
+
+From the above figures, we will find Rfast is the fastest package for matrix operations. Previously, I have used collapse package, which is actually fast enough. But now I will switch to Rfast.

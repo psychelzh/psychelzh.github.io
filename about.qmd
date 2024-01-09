@@ -6,14 +6,13 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/psychelzh
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/psychelzh/
     - icon: github
       text: Github
-      href: https://github.com
-
+      href: https://github.com/psychelzh
 ---
 
-About this blog
+Hello, I am Liang, Zhang, Ph.D candidate in Beijing Normal University. This is my personal blog for my everyday thoughts and coding discovery.
