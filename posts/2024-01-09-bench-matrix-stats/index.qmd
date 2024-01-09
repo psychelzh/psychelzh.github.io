@@ -12,6 +12,8 @@ execute:
 Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of `scale()`. Based on [this blog](A Faster Scale Function | A HopStat and Jump Away (wordpress.com), I decided to benchmark the matrix operations in different packages from [fastverse](https://fastverse.github.io/fastverse/).
 
 ```{r}
+#| cache: false
+
 library(collapse)
 requireNamespace("bench")
 ```
@@ -20,7 +22,6 @@ requireNamespace("bench")
 
 ```{r}
 #| label: bench-rowMeans
-#| cache: true
 
 bench <- bench::press(
   nrow = c(10, 100, 1000),
@@ -43,6 +44,7 @@ bench <- bench::press(
 #| fig-cap: Benchmark of row means
 #| fig-width: 8
 #| fig-height: 5
+#| dependson: bench-rowMeans
 
 plot(bench)
 ```
@@ -72,6 +74,7 @@ bench <- bench::press(
 #| fig-cap: Benchmark of row SDs
 #| fig-width: 8
 #| fig-height: 5
+#| dependson: bench-rowSds
 
 plot(bench)
 ```
@@ -104,6 +107,7 @@ bench <- bench::press(
 #| fig-cap: Benchmark of row-wise operations
 #| fig-width: 8
 #| fig-height: 5
+#| dependson: bench-rowwise
 
 plot(bench)
 ```
@@ -128,7 +132,9 @@ bench <- bench::press(
     data <- matrix(rnorm(nrow * ncol), nrow = nrow)
     bench::mark(
       collapse = fscale(data),
-      Rfast = fscale_rfast(data)
+      Rfast = fscale_rfast(data),
+      base = scale(data),
+      check = FALSE # base scale will add attributes
     )
   }
 )
@@ -140,6 +146,7 @@ bench <- bench::press(
 #| fig-cap: Benchmark of scale
 #| fig-width: 8
 #| fig-height: 5
+#| dependson: bench-scale
 
 plot(bench)
 ```
