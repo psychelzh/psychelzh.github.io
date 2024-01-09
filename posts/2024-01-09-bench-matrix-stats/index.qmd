@@ -48,6 +48,36 @@ bench_rowmeans <- bench::press(
 plot(bench_rowmeans)
 ```
 
+# Row SDs
+
+```{r}
+#| label: bench-rowSds
+#| cache: true
+
+bench_rowmeans <- bench::press(
+  nrow = c(10, 100, 1000),
+  ncol = c(100, 1000, 10000),
+  {
+    data <- matrix(rnorm(nrow * ncol), nrow = nrow)
+    bench::mark(
+      collapse = collapse::fsd(data),
+      Rfast = Rfast::colVars(data, std = TRUE),
+      matrixStats = matrixStats::colSds(data)
+    )
+  }
+)
+```
+
+```{r}
+#| label: fig-rowsds
+#| column: page
+#| fig-cap: Benchmark of row SDs
+#| fig-width: 8
+#| fig-height: 5
+
+plot(bench_rowmeans)
+```
+
 # Row-wise Operations
 
 ```{r}
