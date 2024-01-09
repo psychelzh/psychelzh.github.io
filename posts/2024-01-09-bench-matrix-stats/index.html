@@ -181,13 +181,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of <code>scale()</code>. Based on [this blog](A Faster Scale Function | A HopStat and Jump Away (wordpress.com), I decided to benchmark the matrix operations in different packages from <a href="https://fastverse.github.io/fastverse/">fastverse</a>.</p>
-<div class="cell" data-hash="index_cache/html/unnamed-chunk-1_44509ca7986b926675d54ca86ad4acab">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(collapse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">requireNamespace</span>(<span class="st">"bench"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="row-means" class="level1 page-columns page-full">
 <h1>Row Means</h1>
-<div class="cell" data-hash="index_cache/html/bench-rowMeans_3c1b0abdb4d7a8ab648a1f821f9dda05">
+<div class="cell" data-hash="index_cache/html/bench-rowMeans_1bb2cb0d4ecb3d6dca2b4455782bcc42">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>bench <span class="ot">&lt;-</span> bench<span class="sc">::</span><span class="fu">press</span>(</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">nrow =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">100</span>, <span class="dv">1000</span>),</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="fu">c</span>(<span class="dv">100</span>, <span class="dv">1000</span>, <span class="dv">10000</span>),</span>
@@ -202,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell page-columns page-full" data-hash="index_cache/html/fig-rowmeans_f3b96267f6df87462fbeac0fd067b5d1">
+<div class="cell page-columns page-full" data-hash="index_cache/html/fig-rowmeans_3c9c56f131da32b53e6dbde6144e386a">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(bench)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display column-page">
 <div id="fig-rowmeans" class="quarto-figure quarto-figure-center anchored">
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell page-columns page-full" data-hash="index_cache/html/fig-rowsds_3d9f8c4096b344ec8b3ea5e15f777c49">
+<div class="cell page-columns page-full" data-hash="index_cache/html/fig-rowsds_9604b21ca366df9317e51e5ed91ad87e">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(bench)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display column-page">
 <div id="fig-rowsds" class="quarto-figure quarto-figure-center anchored">
@@ -260,7 +260,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell page-columns page-full" data-hash="index_cache/html/fig-rowwise_e699d790139c7e2e7fcd5d65daf776fc">
+<div class="cell page-columns page-full" data-hash="index_cache/html/fig-rowwise_348d5381166e9782f19dd41e524b360e">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(bench)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display column-page">
 <div id="fig-rowwise" class="quarto-figure quarto-figure-center anchored">
@@ -274,7 +274,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="scale" class="level1 page-columns page-full">
 <h1>Scale</h1>
-<div class="cell" data-hash="index_cache/html/bench-scale_757a8e7a0e5edb4527c22fa1d2fe4f02">
+<div class="cell" data-hash="index_cache/html/bench-scale_35ee548f136868a7320f3f72fddf369b">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fscale_rfast <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  means <span class="ot">&lt;-</span> Rfast<span class="sc">::</span><span class="fu">colmeans</span>(x)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  sds <span class="ot">&lt;-</span> Rfast<span class="sc">::</span><span class="fu">colVars</span>(x, <span class="at">std =</span> <span class="cn">TRUE</span>)</span>
@@ -290,12 +290,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    data <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(nrow <span class="sc">*</span> ncol), <span class="at">nrow =</span> nrow)</span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    bench<span class="sc">::</span><span class="fu">mark</span>(</span>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">collapse =</span> <span class="fu">fscale</span>(data),</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">Rfast =</span> <span class="fu">fscale_rfast</span>(data)</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">Rfast =</span> <span class="fu">fscale_rfast</span>(data),</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">base =</span> <span class="fu">scale</span>(data),</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">check =</span> <span class="cn">FALSE</span> <span class="co"># base scale will add attributes</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell page-columns page-full" data-hash="index_cache/html/fig-scale_2655c179f8218a08d72c2a42d03f3850">
+<div class="cell page-columns page-full" data-hash="index_cache/html/fig-scale_2c46a157a697625c33e60eb05adf5b3d">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(bench)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display column-page">
 <div id="fig-scale" class="quarto-figure quarto-figure-center anchored">
