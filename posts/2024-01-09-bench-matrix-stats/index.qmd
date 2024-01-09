@@ -9,11 +9,10 @@ execute:
   warning: false
 ---
 
-Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. So I decided to benchmark the matrix operations in different packages from [fastverse](https://fastverse.github.io/fastverse/).
-
-Basically, I setup the benchmark by using a convenient function `bench::press()`.
+Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of `scale()`. Based on [this blog](A Faster Scale Function | A HopStat and Jump Away (wordpress.com), I decided to benchmark the matrix operations in different packages from [fastverse](https://fastverse.github.io/fastverse/).
 
 ```{r}
+library(collapse)
 requireNamespace("bench")
 ```
 
@@ -23,7 +22,7 @@ requireNamespace("bench")
 #| label: bench-rowMeans
 #| cache: true
 
-bench_rowmeans <- bench::press(
+bench <- bench::press(
   nrow = c(10, 100, 1000),
   ncol = c(100, 1000, 10000),
   {
@@ -45,16 +44,15 @@ bench_rowmeans <- bench::press(
 #| fig-width: 8
 #| fig-height: 5
 
-plot(bench_rowmeans)
+plot(bench)
 ```
 
 # Row SDs
 
 ```{r}
 #| label: bench-rowSds
-#| cache: true
 
-bench_rowmeans <- bench::press(
+bench <- bench::press(
   nrow = c(10, 100, 1000),
   ncol = c(100, 1000, 10000),
   {
@@ -75,17 +73,17 @@ bench_rowmeans <- bench::press(
 #| fig-width: 8
 #| fig-height: 5
 
-plot(bench_rowmeans)
+plot(bench)
 ```
 
 # Row-wise Operations
 
+Unfortunately, based on [this issue](https://github.com/HenrikBengtsson/matrixStats/issues/238), rowwise computations are not easy to be speeded in matrixStats. So further benchmarking will drop it.
+
 ```{r}
 #| label: bench-rowwise
-#| cache: true
 
-library(collapse)
-bench_rowwise <- bench::press(
+bench <- bench::press(
   nrow = c(10, 100, 1000),
   ncol = c(100, 1000, 10000),
   {
@@ -107,7 +105,43 @@ bench_rowwise <- bench::press(
 #| fig-width: 8
 #| fig-height: 5
 
-plot(bench_rowwise)
+plot(bench)
+```
+
+# Scale
+
+```{r}
+#| label: bench-scale
+
+fscale_rfast <- function(x) {
+  means <- Rfast::colmeans(x)
+  sds <- Rfast::colVars(x, std = TRUE)
+  Rfast::eachrow(
+    Rfast::eachrow(x, means, "-"),
+    sds, "/"
+  )
+}
+bench <- bench::press(
+  nrow = c(10, 100, 1000),
+  ncol = c(100, 1000, 10000),
+  {
+    data <- matrix(rnorm(nrow * ncol), nrow = nrow)
+    bench::mark(
+      collapse = fscale(data),
+      Rfast = fscale_rfast(data)
+    )
+  }
+)
+```
+
+```{r}
+#| label: fig-scale
+#| column: page
+#| fig-cap: Benchmark of scale
+#| fig-width: 8
+#| fig-height: 5
+
+plot(bench)
 ```
 
 # Conclusion
