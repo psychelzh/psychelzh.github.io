@@ -2,6 +2,9 @@
 
 # Enable banner style title blocks
 title-block-banner: true
+comments:
+  giscus:
+    repo: psychelzh/psychelzh.github.io
 
 format:
   html:
