@@ -1,0 +1,9 @@
+---
+title: "R package for connectome predictive modeling (CPM)"
+date: 2024-01-10
+date-modified: last-modified
+categories:
+  - R-package
+---
+
+Since last year, I started to use connectome predictive modeling method to analyze my functional connectivity data, though proposed by my advisor. I found it is a very useful method to predict individual phenotypes from functional connectivity data. Since I am now a heavy R user, I would like to use R to do the analysis. I found [NetworkToolbox](https://cran.r-project.org/web/packages/NetworkToolbox/index.html) on CRAN, but the codes there are not so efficient. So I decided to write my own R package for CPM. The package is still under development, but I have already uploaded it to GitHub. You can find it [here](https://github.com/psychelzh/cpmR). Though the performance cannot keep up with the MATLAB version, it is still much faster than the codes in NetworkToolbox. I will keep updating it. If you have any suggestions, please let me know. Thanks!
