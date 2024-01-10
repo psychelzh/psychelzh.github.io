@@ -7,6 +7,13 @@
     "text": "Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of scale(). Based on [this blog](A Faster Scale Function | A HopStat and Jump Away (wordpress.com), I decided to benchmark the matrix operations in different packages from fastverse.\n\nlibrary(collapse)\nrequireNamespace(\"bench\")\n\n\nRow Means\n\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = collapse::fmean(data),\n      Rfast = Rfast::colmeans(data),\n      matrixStats = matrixStats::colMeans2(data),\n      base = .colMeans(data, nrow, ncol)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\nFigure 1: Benchmark of row means\n\n\n\n\n\n\nRow SDs\n\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = collapse::fsd(data),\n      Rfast = Rfast::colVars(data, std = TRUE),\n      matrixStats = matrixStats::colSds(data)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\nFigure 2: Benchmark of row SDs\n\n\n\n\n\n\nRow-wise Operations\nUnfortunately, based on this issue, rowwise computations are not easy to be speeded in matrixStats. So further benchmarking will drop it.\n\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    vec &lt;- rnorm(ncol)\n    bench::mark(\n      collapse = data %r-% vec,\n      Rfast = Rfast::eachrow(data, vec, \"-\"),\n      base = data - rep(vec, each = nrow)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\nFigure 3: Benchmark of row-wise operations\n\n\n\n\n\n\nScale\n\nfscale_rfast &lt;- function(x) {\n  means &lt;- Rfast::colmeans(x)\n  sds &lt;- Rfast::colVars(x, std = TRUE)\n  Rfast::eachrow(\n    Rfast::eachrow(x, means, \"-\"),\n    sds, \"/\"\n  )\n}\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = fscale(data),\n      Rfast = fscale_rfast(data),\n      base = scale(data),\n      check = FALSE # base scale will add attributes\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\nFigure 4: Benchmark of scale\n\n\n\n\n\n\nConclusion\nFrom the above figures, we will find Rfast is the fastest package for matrix operations. Previously, I have used collapse package, which is actually fast enough. But now I will switch to Rfast."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Liang’s Blogs",
+    "section": "",
+    "text": "R package for connectome predictive modeling (CPM)\n\n\n\n\n\n\n\nR-package\n\n\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\n\n\n\n\n  \n\n\n\n\nBenchmark Matrix Operations\n\n\n\n\n\n\n\nbenchmark\n\n\ncoding\n\n\n\n\n\n\n\n\n\n\n\nJan 9, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -14,10 +21,10 @@
     "text": "Hello, I am Liang, Zhang, Ph.D candidate in Beijing Normal University. This is my personal blog for my everyday thoughts and coding discovery."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Liang’s Blogs",
+    "objectID": "posts/2024-01-10-connectome-predictive-modeling/index.html",
+    "href": "posts/2024-01-10-connectome-predictive-modeling/index.html",
+    "title": "R package for connectome predictive modeling (CPM)",
     "section": "",
-    "text": "Benchmark Matrix Operations\n\n\n\n\n\n\n\nbenchmark\n\n\ncoding\n\n\n\n\n\n\n\n\n\n\n\nJan 9, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Since last year, I started to use connectome predictive modeling method to analyze my functional connectivity data, though proposed by my advisor. I found it is a very useful method to predict individual phenotypes from functional connectivity data. Since I am now a heavy R user, I would like to use R to do the analysis. I found NetworkToolbox on CRAN, but the codes there are not so efficient. So I decided to write my own R package for CPM. The package is still under development, but I have already uploaded it to GitHub. You can find it here. Though the performance cannot keep up with the MATLAB version, it is still much faster than the codes in NetworkToolbox. I will keep updating it. If you have any suggestions, please let me know. Thanks!"
   }
 ]
