@@ -23,6 +23,7 @@ requireNamespace("bench")
 ```{r}
 #| label: bench-rowMeans
 
+withr::local_seed(1)
 bench <- bench::press(
   nrow = c(10, 100, 1000),
   ncol = c(100, 1000, 10000),
@@ -54,6 +55,7 @@ plot(bench)
 ```{r}
 #| label: bench-rowSds
 
+withr::local_seed(1)
 bench <- bench::press(
   nrow = c(10, 100, 1000),
   ncol = c(100, 1000, 10000),
@@ -86,6 +88,7 @@ Unfortunately, based on [this issue](https://github.com/HenrikBengtsson/matrixSt
 ```{r}
 #| label: bench-rowwise
 
+withr::local_seed(1)
 bench <- bench::press(
   nrow = c(10, 100, 1000),
   ncol = c(100, 1000, 10000),
@@ -125,6 +128,7 @@ fscale_rfast <- function(x) {
     sds, "/"
   )
 }
+withr::local_seed(1)
 bench <- bench::press(
   nrow = c(10, 100, 1000),
   ncol = c(100, 1000, 10000),
