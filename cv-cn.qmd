@@ -1,0 +1,63 @@
+---
+title: "个人简历"
+format:
+  html:
+    toc: true
+  pdf:
+    author: 张亮
+    pdf-engine: weasyprint
+css: cv.css
+format-links: [pdf]
+---
+
+::: {.print-only .contact-block}
+psychelzh\@outlook.com
+:::
+
+## 教育经历
+
+**博士 -- 认知神经科学** <br> *北京师范大学* [*2019年9月 --- 至今*]{.cvdate}
+
+-   博士论文：一般认知能力的结构及其脑网络基础
+-   预计提交日期：2024年6月
+
+**硕士 -- 认知神经科学** <br> *北京师范大学* [*2014年9月 --- 2017年6月*]{.cvdate}
+
+-   硕士论文：儿童执行功能的结构与发展研究
+-   毕业时被评为北京市优秀毕业生
+
+**本科 -- 统计学** <br> *北京师范大学* [*2009年9月 --- 2013年6月*]{.cvdate}
+
+-   毕业时成绩年级前5%
+-   GPA: 3.7/4.0
+
+## 研究经历
+
+**博士研究** <br> *北京师范大学* [*2019年9月 --- 至今*]{.cvdate}
+
+-   整理大量认知神经科学行为范式，基于此设计游戏化认知任务，并不断优化设计，保证任务的可靠性和有效性
+-   使用结构方程模型探索一般认知能力及其认知结构
+-   使用连接组学预测模型（connectome-based predictive modeling）方法探索一般认知能力的脑网络基础
+
+**研究助理** <br> *北京师范大学* [*2017年9月 --- June 2019*]{.cvdate}
+
+-   参与北京市脑计划，收集和分析儿童青少年的认知能力与脑成像数据
+-   使用结构方程模型探索儿童认知能力的结构与发展
+
+## 论文发表 {style="page-break-before: always"}
+
+**Zhang, L.**, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510
+
+Sheng, J., Wang, S., **Zhang, L.**, Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120
+
+Feng, J., **Zhang, L.**, Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0
+
+Sheng, J., **Zhang, L.**, Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829
+
+## 会议海报
+
+**Zhang, L.**, Xue, G. The neural substrates of general cognitive ability based on multiple cognitive tasks. Poster presented at the Annual Meeting of the Society for Neuroscience, November 2023, Washington, DC. USA.
+
+::: {.no-print}
+<details>Created based on tutorial of <https://www.cynthiahqy.com/posts/cv-html-pdf/></details>
+:::

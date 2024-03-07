@@ -1,0 +1,63 @@
+---
+title: "Curriculum Vitae"
+format:
+  html:
+    toc: true
+  pdf:
+    author: Liang Zhang
+    pdf-engine: weasyprint
+css: cv.css
+format-links: [pdf]
+---
+
+::: {.print-only .contact-block}
+psychelzh\@outlook.com
+:::
+
+## EDUCATION
+
+**Doctor of Philosophy -- Cognitive Neuroscience** <br> *Beijing Normal University* [*Sept 2019 --- Present*]{.cvdate}
+
+-   Dissertation title: "The Structure of General Cognitive Ability and Its Neural Basis"
+-   Expected submission date: June 2024
+
+**Master of Science -- Cognitive Neuroscience** <br> *Beijing Normal University* [*Sept 2014 --- June 2017*]{.cvdate}
+
+-   Thesis title: "The Structure and Development Trajectory of Children's Executive Function"
+-   Graduated as an outstanding graduate of Beijing
+
+**Bachelor of Science -- Statistics** <br> *Beijing Normal University* [*Sept 2009 --- June 2013*]{.cvdate}
+
+-   Graduated as top 5% of the class
+-   GPA: 3.7/4.0
+
+## RESEARCH EXPERIENCE
+
+**Doctoral Researcher** <br> *Beijing Normal University* [*Sept 2019 --- Present*]{.cvdate}
+
+-   Collect a large number of behavioral paradigms in cognitive neuroscience and design game-like tasks to measure cognitive abilities
+-   Use structural equation modeling to explore the structure of general cognitive ability
+-   Use connectome-based predictive modeling method to predict cognitive ability from brain imaging data
+
+**Research Assistant** <br> *Beijing Normal University* [*Sept 2017 --- June 2019*]{.cvdate}
+
+-   Collected and analyzed data from a large-scale longitudinal study of children's cognitive development
+-   Used structural equation modeling to explore the structure of children's cognitive abilities
+
+## PUBLICATIONS {style="page-break-before: always"}
+
+**Zhang, L.**, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510
+
+Sheng, J., Wang, S., **Zhang, L.**, Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120
+
+Feng, J., **Zhang, L.**, Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0
+
+Sheng, J., **Zhang, L.**, Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829
+
+## CONFERENCE PRESENTATIONS
+
+**Zhang, L.**, Xue, G. The neural substrates of general cognitive ability based on multiple cognitive tasks. Poster presented at the Annual Meeting of the Society for Neuroscience, November 2023, Washington, DC. USA.
+
+::: {.no-print}
+<details>Created based on tutorial of <https://www.cynthiahqy.com/posts/cv-html-pdf/></details>
+:::
