@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Liang’s Blogs</title>
+<title>Liang’s Blogs - 个人简历</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,73 +66,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="cv.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -157,7 +98,7 @@ window.Quarto = {
 <span class="menu-text">Curriculum Vitae</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv-cn.html"> 
+    <a class="nav-link active" href="./cv-cn.html" aria-current="page"> 
 <span class="menu-text">个人简历</span></a>
   </li>  
   <li class="nav-item compact">
@@ -178,109 +119,98 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Liang’s Blogs</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R-package">R-package <span class="quarto-category-count">(1)</span></div><div class="category" data-category="benchmark">benchmark <span class="quarto-category-count">(1)</span></div><div class="category" data-category="coding">coding <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#教育经历" id="toc-教育经历" class="nav-link active" data-scroll-target="#教育经历">教育经历</a></li>
+  <li><a href="#研究经历" id="toc-研究经历" class="nav-link" data-scroll-target="#研究经历">研究经历</a></li>
+  <li><a href="#论文发表" id="toc-论文发表" class="nav-link" data-scroll-target="#论文发表">论文发表</a></li>
+  <li><a href="#会议海报" id="toc-会议海报" class="nav-link" data-scroll-target="#会议海报">会议海报</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="cv-cn.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">个人简历</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<div class="print-only contact-block">
+<p>psychelzh@outlook.com</p>
+</div>
+<section id="教育经历" class="level2">
+<h2 class="anchored" data-anchor-id="教育经历">教育经历</h2>
+<p><strong>博士 – 认知神经科学</strong> <br> <em>北京师范大学</em> <span class="cvdate"><em>2019年9月 — 至今</em></span></p>
+<ul>
+<li>博士论文：一般认知能力的结构及其脑网络基础</li>
+<li>预计提交日期：2024年6月</li>
+</ul>
+<p><strong>硕士 – 认知神经科学</strong> <br> <em>北京师范大学</em> <span class="cvdate"><em>2014年9月 — 2017年6月</em></span></p>
+<ul>
+<li>硕士论文：儿童执行功能的结构与发展研究</li>
+<li>毕业时被评为北京市优秀毕业生</li>
+</ul>
+<p><strong>本科 – 统计学</strong> <br> <em>北京师范大学</em> <span class="cvdate"><em>2009年9月 — 2013年6月</em></span></p>
+<ul>
+<li>毕业时成绩年级前5%</li>
+<li>GPA: 3.7/4.0</li>
+</ul>
+</section>
+<section id="研究经历" class="level2">
+<h2 class="anchored" data-anchor-id="研究经历">研究经历</h2>
+<p><strong>博士研究</strong> <br> <em>北京师范大学</em> <span class="cvdate"><em>2019年9月 — 至今</em></span></p>
+<ul>
+<li>整理大量认知神经科学行为范式，基于此设计游戏化认知任务，并不断优化设计，保证任务的可靠性和有效性</li>
+<li>使用结构方程模型探索一般认知能力及其认知结构</li>
+<li>使用连接组学预测模型（connectome-based predictive modeling）方法探索一般认知能力的脑网络基础</li>
+</ul>
+<p><strong>研究助理</strong> <br> <em>北京师范大学</em> <span class="cvdate"><em>2017年9月 — June 2019</em></span></p>
+<ul>
+<li>参与北京市脑计划，收集和分析儿童青少年的认知能力与脑成像数据</li>
+<li>使用结构方程模型探索儿童认知能力的结构与发展</li>
+</ul>
+</section>
+<section id="论文发表" class="level2" style="page-break-before: always">
+<h2 style="page-break-before: always" class="anchored" data-anchor-id="论文发表">论文发表</h2>
+<p><strong>Zhang, L.</strong>, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., &amp; Xue, G. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510</p>
+<p>Sheng, J., Wang, S., <strong>Zhang, L.</strong>, Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., &amp; Xue, G. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120</p>
+<p>Feng, J., <strong>Zhang, L.</strong>, Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., &amp; Xue, G. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0</p>
+<p>Sheng, J., <strong>Zhang, L.</strong>, Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., &amp; Xue, G. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829</p>
+</section>
+<section id="会议海报" class="level2">
+<h2 class="anchored" data-anchor-id="会议海报">会议海报</h2>
+<p><strong>Zhang, L.</strong>, Xue, G. The neural substrates of general cognitive ability based on multiple cognitive tasks. Poster presented at the Annual Meeting of the Society for Neuroscience, November 2023, Washington, DC. USA.</p>
+<div class="no-print">
+<details>
+Created based on tutorial of <a href="https://www.cynthiahqy.com/posts/cv-html-pdf/" class="uri">https://www.cynthiahqy.com/posts/cv-html-pdf/</a>
+</details>
+</div>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R-package" data-listing-date-sort="1704844800000" data-listing-file-modified-sort="1709821752827" data-listing-date-modified-sort="1709821752000" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
-<div class="thumbnail">
-<p><a href="./posts/2024-01-10-connectome-predictive-modeling/index.html" class="no-external"></a></p><a href="./posts/2024-01-10-connectome-predictive-modeling/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2024-01-10-connectome-predictive-modeling/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024-01-10-connectome-predictive-modeling/index.html" class="no-external">R package for connectome predictive modeling (CPM)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024-01-10-connectome-predictive-modeling/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('R-package'); return false;">
-R-package
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2024-01-10-connectome-predictive-modeling/index.html" class="no-external">Since last year, I started to use connectome predictive modeling method to analyze my functional connectivity data, though proposed by my advisor. I found it is a very…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2024-01-10-connectome-predictive-modeling/index.html" class="no-external">
-<div class="listing-date">
-Jan 10, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="benchmark,coding" data-listing-date-sort="1704758400000" data-listing-file-modified-sort="1709821752827" data-listing-date-modified-sort="1709821752000" data-listing-reading-time-sort="3" data-listing-word-count-sort="497">
-<div class="thumbnail">
-<p><a href="./posts/2024-01-09-bench-matrix-stats/index.html" class="no-external"></a></p><a href="./posts/2024-01-09-bench-matrix-stats/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/2024-01-09-bench-matrix-stats/index_files/figure-html/fig-rowmeans-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2024-01-09-bench-matrix-stats/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2024-01-09-bench-matrix-stats/index.html" class="no-external">Benchmark Matrix Operations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2024-01-09-bench-matrix-stats/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('benchmark'); return false;">
-benchmark
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('coding'); return false;">
-coding
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2024-01-09-bench-matrix-stats/index.html" class="no-external">Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of <code>scal…</code></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2024-01-09-bench-matrix-stats/index.html" class="no-external">
-<div class="listing-date">
-Jan 9, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

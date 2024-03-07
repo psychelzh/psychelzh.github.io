@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/psychelzh/psychelzh.github.io/posts/2024-01-09-bench-matrix-stats/index.html</loc>
-    <lastmod>2024-01-10T07:02:17.720Z</lastmod>
+    <loc>https://psychelzh.github.io/about.html</loc>
+    <lastmod>2024-03-07T14:29:12.827Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/psychelzh/psychelzh.github.io/index.html</loc>
-    <lastmod>2024-01-10T07:02:14.868Z</lastmod>
+    <loc>https://psychelzh.github.io/cv-cn.html</loc>
+    <lastmod>2024-03-07T14:29:12.827Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/psychelzh/psychelzh.github.io/about.html</loc>
-    <lastmod>2024-01-10T07:02:14.188Z</lastmod>
+    <loc>https://psychelzh.github.io/posts/2024-01-10-connectome-predictive-modeling/index.html</loc>
+    <lastmod>2024-03-07T14:29:12.827Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/psychelzh/psychelzh.github.io/posts/2024-01-10-connectome-predictive-modeling/index.html</loc>
-    <lastmod>2024-01-10T07:02:15.672Z</lastmod>
+    <loc>https://psychelzh.github.io/posts/2024-01-09-bench-matrix-stats/index.html</loc>
+    <lastmod>2024-03-07T14:29:12.827Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psychelzh.github.io/cv.html</loc>
+    <lastmod>2024-03-07T14:29:12.827Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psychelzh.github.io/index.html</loc>
+    <lastmod>2024-03-07T14:29:12.827Z</lastmod>
   </url>
 </urlset>

@@ -1,1 +1,1 @@
-Sitemap: https://github.com/psychelzh/psychelzh.github.io/sitemap.xml
+Sitemap: https://psychelzh.github.io/sitemap.xml
