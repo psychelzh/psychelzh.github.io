@@ -35,24 +35,31 @@ psychelzh\@outlook.com
 
 **博士研究** <br> *北京师范大学* [*2019年9月 --- 至今*]{.cvdate}
 
--   整理大量认知神经科学行为范式，基于此设计游戏化认知任务，并不断优化设计，保证任务的可靠性和有效性
+-   使用行为数据建模方法，如基于扩散漂移模型模型、生成模型等，优化认知任务指标计算
 -   使用结构方程模型探索一般认知能力及其认知结构
--   使用连接组学预测模型（connectome-based predictive modeling）方法探索一般认知能力的脑网络基础
+-   基于磁共振成像技术，建立功能连接网络，结合连接组学预测模型（connectome-based predictive modeling）和脑网络机制探索一般认知能力的脑网络基础
 
 **研究助理** <br> *北京师范大学* [*2017年9月 --- June 2019*]{.cvdate}
 
 -   参与北京市脑计划，收集和分析儿童青少年的认知能力与脑成像数据
 -   使用结构方程模型探索儿童认知能力的结构与发展
 
+## 专业技能
+
+-   **统计分析**：熟练使用R、Python进行数据分析，熟悉线性混合效应模型、结构方程模型和贝叶斯统计建模等
+-   **脑成像技术**：熟悉磁共振成像技术，会独立完成数据预处理和分析
+
 ## 论文发表 {style="page-break-before: always"}
 
-**Zhang, L.**, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510
+**Zhang, L.**, Feng, J., Xue, G*. (In preparation). The neural substrates and structure of general cognitive ability based on multiple cognitive tasks.
 
-Sheng, J., Wang, S., **Zhang, L.**, Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120
+**Zhang, L.**, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G*. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510 (IF: 3.7, SCI二区)
 
-Feng, J., **Zhang, L.**, Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0
+Sheng, J., Wang, S., **Zhang, L.**, Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G*. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120 (IF: 11.1, SCI一区)
 
-Sheng, J., **Zhang, L.**, Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829
+Feng, J., **Zhang, L.**, Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G*. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0 (IF: 16.6, SCI一区)
+
+Sheng, J., **Zhang, L.**, Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G*. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829 (IF: 13.6, SCI一区)
 
 ## 会议海报
 
