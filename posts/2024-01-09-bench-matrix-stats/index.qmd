@@ -9,7 +9,7 @@ execute:
   warning: false
 ---
 
-Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of `scale()`. Based on [this blog](A Faster Scale Function | A HopStat and Jump Away (wordpress.com), I decided to benchmark the matrix operations in different packages from [fastverse](https://fastverse.github.io/fastverse/).
+Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of `scale()`. Based on [this blog](https://hopstat.wordpress.com/2016/02/23/a-faster-scale-function/), I decided to benchmark the matrix operations in different packages from [fastverse](https://fastverse.github.io/fastverse/).
 
 ```{r}
 #| cache: false
