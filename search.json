@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Liang’s Blogs",
     "section": "",
-    "text": "Hello, I am Liang, Zhang, Ph.D candidate in Beijing Normal University. This is my personal blog for my everyday thoughts and coding discovery."
+    "text": "R package for connectome predictive modeling (CPM)\n\n\n\n\n\n\nR-package\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBenchmark Matrix Operations\n\n\n\n\n\n\nbenchmark\n\n\ncoding\n\n\n\n\n\n\n\n\n\nJan 9, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv-cn.html",
@@ -25,14 +25,21 @@
     "href": "cv-cn.html#研究经历",
     "title": "个人简历",
     "section": "研究经历",
-    "text": "研究经历\n博士研究  北京师范大学 2019年9月 — 至今\n\n整理大量认知神经科学行为范式，基于此设计游戏化认知任务，并不断优化设计，保证任务的可靠性和有效性\n使用结构方程模型探索一般认知能力及其认知结构\n使用连接组学预测模型（connectome-based predictive modeling）方法探索一般认知能力的脑网络基础\n\n研究助理  北京师范大学 2017年9月 — June 2019\n\n参与北京市脑计划，收集和分析儿童青少年的认知能力与脑成像数据\n使用结构方程模型探索儿童认知能力的结构与发展"
+    "text": "研究经历\n博士研究  北京师范大学 2019年9月 — 至今\n\n使用行为数据建模方法，如基于扩散漂移模型模型、生成模型等，优化认知任务指标计算\n使用结构方程模型探索一般认知能力及其认知结构\n基于磁共振成像技术，建立功能连接网络，结合连接组学预测模型（connectome-based predictive modeling）和脑网络机制探索一般认知能力的脑网络基础\n\n研究助理  北京师范大学 2017年9月 — June 2019\n\n参与北京市脑计划，收集和分析儿童青少年的认知能力与脑成像数据\n使用结构方程模型探索儿童认知能力的结构与发展"
+  },
+  {
+    "objectID": "cv-cn.html#专业技能",
+    "href": "cv-cn.html#专业技能",
+    "title": "个人简历",
+    "section": "专业技能",
+    "text": "专业技能\n\n统计分析：熟练使用R、Python进行数据分析，熟悉线性混合效应模型、结构方程模型和贝叶斯统计建模等\n脑成像技术：熟悉磁共振成像技术，会独立完成数据预处理和分析"
   },
   {
     "objectID": "cv-cn.html#论文发表",
     "href": "cv-cn.html#论文发表",
     "title": "个人简历",
     "section": "论文发表",
-    "text": "论文发表\nZhang, L., Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510\nSheng, J., Wang, S., Zhang, L., Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120\nFeng, J., Zhang, L., Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0\nSheng, J., Zhang, L., Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829"
+    "text": "论文发表\nZhang, L., Feng, J., Xue, G*. (In preparation). The neural substrates and structure of general cognitive ability based on multiple cognitive tasks.\nZhang, L., Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G*. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510 (IF: 3.7, SCI二区)\nSheng, J., Wang, S., Zhang, L., Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G*. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120 (IF: 11.1, SCI一区)\nFeng, J., Zhang, L., Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G*. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0 (IF: 16.6, SCI一区)\nSheng, J., Zhang, L., Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G*. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829 (IF: 13.6, SCI一区)"
   },
   {
     "objectID": "cv-cn.html#会议海报",
@@ -53,7 +60,7 @@
     "href": "posts/2024-01-09-bench-matrix-stats/index.html",
     "title": "Benchmark Matrix Operations",
     "section": "",
-    "text": "Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of scale(). Based on [this blog](A Faster Scale Function | A HopStat and Jump Away (wordpress.com), I decided to benchmark the matrix operations in different packages from fastverse.\n\nlibrary(collapse)\nrequireNamespace(\"bench\")\n\n\nRow Means\n\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = collapse::fmean(data),\n      Rfast = Rfast::colmeans(data),\n      matrixStats = matrixStats::colMeans2(data),\n      base = .colMeans(data, nrow, ncol)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 1: Benchmark of row means\n\n\n\n\n\n\n\nRow SDs\n\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = collapse::fsd(data),\n      Rfast = Rfast::colVars(data, std = TRUE),\n      matrixStats = matrixStats::colSds(data)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 2: Benchmark of row SDs\n\n\n\n\n\n\n\nRow-wise Operations\nUnfortunately, based on this issue, rowwise computations are not easy to be speeded in matrixStats. So further benchmarking will drop it.\n\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    vec &lt;- rnorm(ncol)\n    bench::mark(\n      collapse = data %r-% vec,\n      Rfast = Rfast::eachrow(data, vec, \"-\"),\n      base = data - rep(vec, each = nrow)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 3: Benchmark of row-wise operations\n\n\n\n\n\n\n\nScale\n\nfscale_rfast &lt;- function(x) {\n  means &lt;- Rfast::colmeans(x)\n  sds &lt;- Rfast::colVars(x, std = TRUE)\n  Rfast::eachrow(\n    Rfast::eachrow(x, means, \"-\"),\n    sds, \"/\"\n  )\n}\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = fscale(data),\n      Rfast = fscale_rfast(data),\n      base = scale(data),\n      check = FALSE # base scale will add attributes\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 4: Benchmark of scale\n\n\n\n\n\n\n\nConclusion\nFrom the above figures, we will find Rfast is the fastest package for matrix operations. Previously, I have used collapse package, which is actually fast enough. But now I will switch to Rfast."
+    "text": "Recently, I am trying to speed up my connectome predictive modeling code. I found that the matrix operations are the bottleneck. Specifically, I need a faster version of scale(). Based on this blog, I decided to benchmark the matrix operations in different packages from fastverse.\n\nlibrary(collapse)\nrequireNamespace(\"bench\")\n\n\nRow Means\n\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = collapse::fmean(data),\n      Rfast = Rfast::colmeans(data),\n      matrixStats = matrixStats::colMeans2(data),\n      base = .colMeans(data, nrow, ncol)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 1: Benchmark of row means\n\n\n\n\n\n\n\nRow SDs\n\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = collapse::fsd(data),\n      Rfast = Rfast::colVars(data, std = TRUE),\n      matrixStats = matrixStats::colSds(data)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 2: Benchmark of row SDs\n\n\n\n\n\n\n\nRow-wise Operations\nUnfortunately, based on this issue, rowwise computations are not easy to be speeded in matrixStats. So further benchmarking will drop it.\n\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    vec &lt;- rnorm(ncol)\n    bench::mark(\n      collapse = data %r-% vec,\n      Rfast = Rfast::eachrow(data, vec, \"-\"),\n      base = data - rep(vec, each = nrow)\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 3: Benchmark of row-wise operations\n\n\n\n\n\n\n\nScale\n\nfscale_rfast &lt;- function(x) {\n  means &lt;- Rfast::colmeans(x)\n  sds &lt;- Rfast::colVars(x, std = TRUE)\n  Rfast::eachrow(\n    Rfast::eachrow(x, means, \"-\"),\n    sds, \"/\"\n  )\n}\nwithr::local_seed(1)\nbench &lt;- bench::press(\n  nrow = c(10, 100, 1000),\n  ncol = c(100, 1000, 10000),\n  {\n    data &lt;- matrix(rnorm(nrow * ncol), nrow = nrow)\n    bench::mark(\n      collapse = fscale(data),\n      Rfast = fscale_rfast(data),\n      base = scale(data),\n      check = FALSE # base scale will add attributes\n    )\n  }\n)\n\n\nplot(bench)\n\n\n\n\n\n\n\nFigure 4: Benchmark of scale\n\n\n\n\n\n\n\nConclusion\nFrom the above figures, we will find Rfast is the fastest package for matrix operations. Previously, I have used collapse package, which is actually fast enough. But now I will switch to Rfast."
   },
   {
     "objectID": "cv.html",
@@ -91,10 +98,10 @@
     "text": "CONFERENCE PRESENTATIONS\nZhang, L., Xue, G. The neural substrates of general cognitive ability based on multiple cognitive tasks. Poster presented at the Annual Meeting of the Society for Neuroscience, November 2023, Washington, DC. USA.\n\n\nCreated based on tutorial of https://www.cynthiahqy.com/posts/cv-html-pdf/"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Liang’s Blogs",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "R package for connectome predictive modeling (CPM)\n\n\n\n\n\n\nR-package\n\n\n\n\n\n\n\n\n\nJan 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBenchmark Matrix Operations\n\n\n\n\n\n\nbenchmark\n\n\ncoding\n\n\n\n\n\n\n\n\n\nJan 9, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello, I am Liang, Zhang, Ph.D candidate in Beijing Normal University. This is my personal blog for my everyday thoughts and coding discovery."
   }
 ]
