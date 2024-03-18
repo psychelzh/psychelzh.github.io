@@ -1,0 +1,40 @@
+---
+title: "R metaprogramming"
+date: 2024-03-19
+date-modified: last-modified
+categories:
+  - R-programming
+---
+
+Since I have learnt about the rlang package, I have been fascinated by the power of metaprogramming in R. The first time I know such a programming pattern might date back to when I knew the [`eval()`](https://ww2.mathworks.cn/help/matlab/ref/eval.html) function in writing MATLAB codes. However, this type of programming is really a disaster in MATLAB, for it only accepts a string of code. It is R shows me the interesting part of the world of metaprogramming.
+
+At that time, I knew it is called non-standard evaluation (NSE) in R, and it is just used to save typing so that users do not need to type quotes, and what's more useful, I can access the data columns without typing the data variable names. Then after reading advanced R, it reveals a new path about metaprogramming in R, although some strange terms also make me confused, e.g., quasiquotation, unquotation, and so on.
+
+What makes me really write codes with metaprogramming paradigm is when I began to use targets package. And one day, I found "static branching" supported by the package, which requires certain metaprogramming. And the author of that package also created targetopia, really requiring some metaprogramming skills to create so-called targets factory functions. So I then resorted to rlang package, trying to have a deeper understanding of metaprogramming in R.
+
+The first days with rlang package were really happy and funny. But the first frustration came when I found `expr()` is really annoying becasue I treated it as equivalent of `substitute()`, only also supports `!!` and `!!!` injection. After a real long time, I finally knew it is equivalent to `bquote()`. At the end of the day, I just begin to love base R, especially for metaprogramming. For example, `bquote()` and `substitute()` are more intuitive to me.
+
+But today I got to know that `bquote()` is more power than I thought. It also supports splicing!! Amazing, although only added after R 4.0.0. I write a simple use case for me, which is really special for usage in targets package. As I sometimes nested name for several targets into a list, and I want to make sure targets understand that the dependency is the elements of the list, not the list itself. So the splicing feature of `bquote()` is really useful for me. Here is a simple example:
+
+```{r}
+targets::tar_dir({
+  targets::tar_script({
+    library(targets)
+    deps <- rlang::syms(c("x", "y"))
+    list(
+      tar_target(x, 1),
+      tar_target(y, 2),
+      eval(
+        bquote(
+          tar_target(
+            name,
+            list(..(deps)) # splice syntax
+          ),
+          splice = TRUE
+        )
+      )
+    )
+  })
+  targets::tar_visnetwork()
+})
+```
