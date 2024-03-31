@@ -3,10 +3,10 @@ title: "R metaprogramming"
 date: 2024-03-19
 date-modified: last-modified
 categories:
-  - R-programming
+  - metaprogramming
 ---
 
-Since I have learnt about the rlang package, I have been fascinated by the power of metaprogramming in R. The first time I know such a programming pattern might date back to when I knew the [`eval()`](https://ww2.mathworks.cn/help/matlab/ref/eval.html) function in writing MATLAB codes. However, this type of programming is really a disaster in MATLAB, for it only accepts a string of code. It is R shows me the interesting part of the world of metaprogramming.
+Since I have learnt about the rlang package, I have been fascinated by the power of metaprogramming in R. The first time I learnt such a programming pattern might date back to when I found the [`eval()`](https://ww2.mathworks.cn/help/matlab/ref/eval.html) function in writing MATLAB codes. However, this type of programming is really a disaster in MATLAB, for it only accepts a string of code. It is R shows me the interesting part of the world of metaprogramming.
 
 At that time, I knew it is called non-standard evaluation (NSE) in R, and it is just used to save typing so that users do not need to type quotes, and what's more useful, I can access the data columns without typing the data variable names. Then after reading advanced R, it reveals a new path about metaprogramming in R, although some strange terms also make me confused, e.g., quasiquotation, unquotation, and so on.
 
