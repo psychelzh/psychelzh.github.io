@@ -12,8 +12,8 @@ Let's begin with Donald Knuth's famous quote:
 
 I should admit that I have often found me into such a trap. To be more specific, I have spent much time on enhancing code quality and re-check it many times. Now if I am to be a researcher, how large proportion of my time should be spent on this sort of things?
 
-There can be two extreme cases: hasty or meticulous. I should identify myself as the meticulous group. When working on projects, I will spend much of my time on programming and enhance the code quality. Sometimes it is definitely overemphasized, because I have postponed the deadline of many projects. It is of a merit to be meticulous, which is known to all, but that seems to be problem and makes me not see the forest for the trees. This could really be an issue for a researcher, which is expected to focus more on information and knowledge.
+There can be two extreme cases: hasty or meticulous. I should identify myself as the meticulous group. When working on projects, I will spend much of my time on programming and enhance the code quality. Sometimes it is definitely overemphasized, because I have postponed the deadline of many projects. It is of a merit to be meticulous, which is known to all, but that seems to be a problem for me and makes me not see the forest for the trees. This could really be an issue for a researcher, which is expected to focus more on information and knowledge.
 
-The solution is to balance. To balance, I mean I should limit the time on programming. I love programming, but the more interesting, or important, things should be beyond programming but the knowledge of to my research field.
+The solution is to balance. To balance, I mean I should limit the time on programming. I love programming, but the more interesting, or important, things should be beyond programming but the knowledge of my research field.
 
 At last, I am now working on my Ph.D dissertation, the programming hours should definitely limited. And so do the gaming and playing hours. Do not pretend to be diligent!
