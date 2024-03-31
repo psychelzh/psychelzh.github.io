@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -162,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="quarto-title column-body">
       <h1 class="title">R metaprogramming</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">R-programming</div>
+                <div class="quarto-category">metaprogramming</div>
               </div>
                   </div>
   </div>
@@ -181,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">March 18, 2024</p>
+        <p class="date-modified">March 31, 2024</p>
       </div>
     </div>
       
@@ -199,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Since I have learnt about the rlang package, I have been fascinated by the power of metaprogramming in R. The first time I know such a programming pattern might date back to when I knew the <a href="https://ww2.mathworks.cn/help/matlab/ref/eval.html"><code>eval()</code></a> function in writing MATLAB codes. However, this type of programming is really a disaster in MATLAB, for it only accepts a string of code. It is R shows me the interesting part of the world of metaprogramming.</p>
+<p>Since I have learnt about the rlang package, I have been fascinated by the power of metaprogramming in R. The first time I learnt such a programming pattern might date back to when I found the <a href="https://ww2.mathworks.cn/help/matlab/ref/eval.html"><code>eval()</code></a> function in writing MATLAB codes. However, this type of programming is really a disaster in MATLAB, for it only accepts a string of code. It is R shows me the interesting part of the world of metaprogramming.</p>
 <p>At that time, I knew it is called non-standard evaluation (NSE) in R, and it is just used to save typing so that users do not need to type quotes, and what’s more useful, I can access the data columns without typing the data variable names. Then after reading advanced R, it reveals a new path about metaprogramming in R, although some strange terms also make me confused, e.g., quasiquotation, unquotation, and so on.</p>
 <p>What makes me really write codes with metaprogramming paradigm is when I began to use targets package. And one day, I found “static branching” supported by the package, which requires certain metaprogramming. And the author of that package also created targetopia, really requiring some metaprogramming skills to create so-called targets factory functions. So I then resorted to rlang package, trying to have a deeper understanding of metaprogramming in R.</p>
 <p>The first days with rlang package were really happy and funny. But the first frustration came when I found <code>expr()</code> is really annoying becasue I treated it as equivalent of <code>substitute()</code>, only also supports <code>!!</code> and <code>!!!</code> injection. After a real long time, I finally knew it is equivalent to <code>bquote()</code>. At the end of the day, I just begin to love base R, especially for metaprogramming. For example, <code>bquote()</code> and <code>substitute()</code> are more intuitive to me.</p>
