@@ -18,7 +18,7 @@ Email: psychelzh\@outlook.com <br> Website: <https://psychelzh.github.io/> <br> 
 
 **Doctor of Philosophy -- Cognitive Neuroscience** <br> *Beijing Normal University* [*September 2019 --- July 2024*]{.cvdate}
 
--   Dissertation: "COGNITIVE AND NEURAL MECHANISMS OF GENERAL COGNITIVE ABILITIES: EVIDENCE FROM PSYCHOMETRICS AND BRAIN NETWORKS"
+-   Dissertation: *Cognitive And Neural Mechanisms Of General Cognitive Abilities: Evidence From Psychometrics And Brain Networks*
 
 **Research Assistant** <br> *Beijing Normal University* [*August 2017 --- August 2019*]{.cvdate}
 
@@ -27,7 +27,7 @@ Email: psychelzh\@outlook.com <br> Website: <https://psychelzh.github.io/> <br> 
 
 **Master of Science -- Cognitive Neuroscience** <br> *Beijing Normal University* [*September 2014 --- July 2017*]{.cvdate}
 
--   Thesis: "The Structure and Development Trajectory of Children's Executive Function"
+-   Thesis: *The Structure and Development Trajectory of Children's Executive Function*
 -   Graduated as an outstanding graduate of Beijing
 
 **Bachelor of Science -- Statistics** <br> *Beijing Normal University* [*September 2009 --- July 2013*]{.cvdate}
@@ -35,7 +35,7 @@ Email: psychelzh\@outlook.com <br> Website: <https://psychelzh.github.io/> <br> 
 -   Graduated as top 5% of the class
 -   GPA: 3.7/4.0
 
-## PUBLICATIONS {style="page-break-before: always"}
+## MAIN PUBLICATIONS {style="page-break-before: always"}
 
 **Zhang, L.**, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510
 
