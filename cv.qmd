@@ -11,9 +11,7 @@ format-links: [pdf]
 ---
 
 ::: {.print-only .contact-block}
-Email: psychelzh\@outlook.com
-Website: https://psychelzh.github.io/
-URL: https://github.com/psychelzh
+Email: psychelzh\@outlook.com <br> Website: https://psychelzh.github.io/ <br> URL: https://github.com/psychelzh
 :::
 
 ## EDUCATION AND TRAINING
