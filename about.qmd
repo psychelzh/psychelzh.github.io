@@ -15,4 +15,4 @@ about:
       href: https://github.com/psychelzh
 ---
 
-Hello, I am Liang, Zhang, Ph.D candidate in Beijing Normal University. This is my personal blog for my everyday thoughts and coding discovery.
+Hello, I am Liang, Zhang, a Ph.D just graduated from Beijing Normal University. This is my personal blog for my everyday thoughts and coding discoveries.

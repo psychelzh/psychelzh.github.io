@@ -11,38 +11,31 @@ format-links: [pdf]
 ---
 
 ::: {.print-only .contact-block}
-psychelzh\@outlook.com
+Email: psychelzh\@outlook.com
+Website: https://psychelzh.github.io/
+URL: https://github.com/psychelzh
 :::
 
-## EDUCATION
+## EDUCATION AND TRAINING
 
-**Doctor of Philosophy -- Cognitive Neuroscience** <br> *Beijing Normal University* [*Sept 2019 --- Present*]{.cvdate}
+**Doctor of Philosophy -- Cognitive Neuroscience** <br> *Beijing Normal University* [*September 2019 --- July 2024*]{.cvdate}
 
--   Dissertation title: "The Structure of General Cognitive Ability and Its Neural Basis"
--   Expected submission date: June 2024
+-   Dissertation: "COGNITIVE AND NEURAL MECHANISMS OF GENERAL COGNITIVE ABILITIES: EVIDENCE FROM PSYCHOMETRICS AND BRAIN NETWORKS"
 
-**Master of Science -- Cognitive Neuroscience** <br> *Beijing Normal University* [*Sept 2014 --- June 2017*]{.cvdate}
-
--   Thesis title: "The Structure and Development Trajectory of Children's Executive Function"
--   Graduated as an outstanding graduate of Beijing
-
-**Bachelor of Science -- Statistics** <br> *Beijing Normal University* [*Sept 2009 --- June 2013*]{.cvdate}
-
--   Graduated as top 5% of the class
--   GPA: 3.7/4.0
-
-## RESEARCH EXPERIENCE
-
-**Doctoral Researcher** <br> *Beijing Normal University* [*Sept 2019 --- Present*]{.cvdate}
-
--   Collect a large number of behavioral paradigms in cognitive neuroscience and design game-like tasks to measure cognitive abilities
--   Use structural equation modeling to explore the structure of general cognitive ability
--   Use connectome-based predictive modeling method to predict cognitive ability from brain imaging data
-
-**Research Assistant** <br> *Beijing Normal University* [*Sept 2017 --- June 2019*]{.cvdate}
+**Research Assistant** <br> *Beijing Normal University* [*August 2017 --- August 2019*]{.cvdate}
 
 -   Collected and analyzed data from a large-scale longitudinal study of children's cognitive development
 -   Used structural equation modeling to explore the structure of children's cognitive abilities
+
+**Master of Science -- Cognitive Neuroscience** <br> *Beijing Normal University* [*September 2014 --- July 2017*]{.cvdate}
+
+-   Thesis: "The Structure and Development Trajectory of Children's Executive Function"
+-   Graduated as an outstanding graduate of Beijing
+
+**Bachelor of Science -- Statistics** <br> *Beijing Normal University* [*September 2009 --- July 2013*]{.cvdate}
+
+-   Graduated as top 5% of the class
+-   GPA: 3.7/4.0
 
 ## PUBLICATIONS {style="page-break-before: always"}
 
