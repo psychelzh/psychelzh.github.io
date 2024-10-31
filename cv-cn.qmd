@@ -11,15 +11,14 @@ format-links: [pdf]
 ---
 
 ::: {.print-only .contact-block}
-psychelzh\@outlook.com
+邮箱: psychelzh\@outlook.com <br> 个人网站: <https://psychelzh.github.io/> <br> Github: <https://github.com/psychelzh>
 :::
 
 ## 教育经历
 
-**博士 -- 认知神经科学** <br> *北京师范大学* [*2019年9月 --- 至今*]{.cvdate}
+**博士 -- 认知神经科学** <br> *北京师范大学* [*2019年9月 --- 2024年7月*]{.cvdate}
 
--   博士论文：一般认知能力的结构及其脑网络基础
--   预计提交日期：2024年6月
+-   博士论文：一般认知能力的认知与神经机制：来自测量学和脑网络的证据
 
 **硕士 -- 认知神经科学** <br> *北京师范大学* [*2014年9月 --- 2017年6月*]{.cvdate}
 
@@ -33,13 +32,13 @@ psychelzh\@outlook.com
 
 ## 研究经历
 
-**博士研究** <br> *北京师范大学* [*2019年9月 --- 至今*]{.cvdate}
+**博士研究** <br> *北京师范大学* [*2019年9月 --- 2024年7月*]{.cvdate}
 
 -   使用行为数据建模方法，如基于扩散漂移模型模型、生成模型等，优化认知任务指标计算
 -   使用结构方程模型探索一般认知能力及其认知结构
 -   基于磁共振成像技术，建立功能连接网络，结合连接组学预测模型（connectome-based predictive modeling）和脑网络机制探索一般认知能力的脑网络基础
 
-**研究助理** <br> *北京师范大学* [*2017年9月 --- June 2019*]{.cvdate}
+**研究助理** <br> *北京师范大学* [*2017年9月 --- 2019年6月*]{.cvdate}
 
 -   参与北京市脑计划，收集和分析儿童青少年的认知能力与脑成像数据
 -   使用结构方程模型探索儿童认知能力的结构与发展
@@ -51,7 +50,9 @@ psychelzh\@outlook.com
 
 ## 论文发表 {style="page-break-before: always"}
 
-**Zhang, L.**, Feng, J., Xue, G*. (In preparation). The neural substrates and structure of general cognitive ability based on multiple cognitive tasks.
+**Zhang, L.**, Feng, J., Xue, G*. (In preparation). The structure of human cognitive abilities: A study with comprehensive cognitive tasks.
+
+Sheng, J.#, **Zhang, L.**#, Xue, G*. (In preparation). Shared and individualized representational transformations support episodic memory formation.
 
 **Zhang, L.**, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G*. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510 (IF: 3.7, SCI二区)
 
@@ -60,6 +61,8 @@ Sheng, J., Wang, S., **Zhang, L.**, Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C.
 Feng, J., **Zhang, L.**, Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G*. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0 (IF: 16.6, SCI一区)
 
 Sheng, J., **Zhang, L.**, Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G*. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829 (IF: 13.6, SCI一区)
+
+\# 共同第一作者；* 通讯作者
 
 ## 会议海报
 
