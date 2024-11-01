@@ -19,6 +19,7 @@ Email: psychelzh\@outlook.com <br> Website: <https://psychelzh.github.io/> <br> 
 **Doctor of Philosophy -- Cognitive Neuroscience** <br> *Beijing Normal University* [*September 2019 --- July 2024*]{.cvdate}
 
 -   Dissertation: *Cognitive And Neural Mechanisms Of General Cognitive Abilities: Evidence From Psychometrics And Brain Networks*
+-   Supervised by Prof. Gui Xue
 
 **Research Assistant** <br> *Beijing Normal University* [*August 2017 --- August 2019*]{.cvdate}
 
@@ -35,7 +36,9 @@ Email: psychelzh\@outlook.com <br> Website: <https://psychelzh.github.io/> <br> 
 -   Graduated as top 5% of the class
 -   GPA: 3.7/4.0
 
-## MAIN PUBLICATIONS {style="page-break-before: always"}
+## PUBLICATIONS
+
+Sheng, J.#, **Zhang, L.**#, Xue, G*. (In preparation). Shared and individualized representational transformations support episodic memory formation.
 
 **Zhang, L.**, Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510
 
@@ -45,9 +48,21 @@ Feng, J., **Zhang, L.**, Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y.
 
 Sheng, J., **Zhang, L.**, Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829
 
+Liu, J., Zhang, H., Yu, T., Ren, L., Ni, D., Yang, Q., Lu, B., **Zhang, L.**, Axmacher, N., & Xue, G. (2021). Transformative neural representations support long-term episodic memory. Science Advances, 7(41), eabg9715. https://doi.org/10.1126/sciadv.abg9715
+
+Feng, J., Chen, C., Cai, Y., Ye, Z., Feng, K., Liu, J., **Zhang, L.**, Yang, Q., Li, A., Sheng, J., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G. (2020). Partitioning heritability analyses unveil the genetic architecture of human brain multidimensional functional connectivity patterns. Human Brain Mapping, 41(12), 3305–3317. https://doi.org/10.1002/hbm.25018
+
+\#: equal contribution; *: corresponding author
+
 ## CONFERENCE PRESENTATIONS
 
 **Zhang, L.**, Xue, G. The neural substrates of general cognitive ability based on multiple cognitive tasks. Poster presented at the Annual Meeting of the Society for Neuroscience, November 2023, Washington, DC. USA.
+
+## RELEVANT SKILLS
+
+-   Programming: R, Python, MATLAB
+-   Statistical Analysis: Machine Learning, Structural Equation Modeling, Hierarchical Bayesian Modeling.
+-   Neuroimaging: fMRI, brain network analysis
 
 ::: {.no-print}
 <details>Created based on tutorial of <https://www.cynthiahqy.com/posts/cv-html-pdf/></details>
