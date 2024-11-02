@@ -25,35 +25,35 @@
     "href": "cv-cn.html#教育经历",
     "title": "个人简历",
     "section": "教育经历",
-    "text": "教育经历\n博士 – 认知神经科学  北京师范大学 2019年9月 — 2024年7月\n\n博士论文：一般认知能力的认知与神经机制：来自测量学和脑网络的证据\n\n硕士 – 认知神经科学  北京师范大学 2014年9月 — 2017年6月\n\n硕士论文：儿童执行功能的结构与发展研究\n毕业时被评为北京市优秀毕业生\n\n本科 – 统计学  北京师范大学 2009年9月 — 2013年6月\n\n毕业时成绩年级前5%\nGPA: 3.7/4.0"
+    "text": "教育经历\n博士 – 认知神经科学  北京师范大学 2019年9月 — 2024年7月\n\n博士论文：一般认知能力的认知与神经机制：来自测量学和脑网络的证据\n指导老师：薛贵教授\n\n硕士 – 认知神经科学  北京师范大学 2014年9月 — 2017年6月\n\n硕士论文：儿童执行功能的结构与发展研究\n毕业时被评为北京市优秀毕业生\n\n本科 – 统计学  北京师范大学 2009年9月 — 2013年6月\n\n毕业时成绩年级前5%\nGPA: 3.7/4.0"
   },
   {
-    "objectID": "cv-cn.html#研究经历",
-    "href": "cv-cn.html#研究经历",
+    "objectID": "cv-cn.html#项目经历",
+    "href": "cv-cn.html#项目经历",
     "title": "个人简历",
-    "section": "研究经历",
-    "text": "研究经历\n博士研究  北京师范大学 2019年9月 — 2024年7月\n\n使用行为数据建模方法，如基于扩散漂移模型模型、生成模型等，优化认知任务指标计算\n使用结构方程模型探索一般认知能力及其认知结构\n基于磁共振成像技术，建立功能连接网络，结合连接组学预测模型（connectome-based predictive modeling）和脑网络机制探索一般认知能力的脑网络基础\n\n研究助理  北京师范大学 2017年9月 — 2019年6月\n\n参与北京市脑计划，收集和分析儿童青少年的认知能力与脑成像数据\n使用结构方程模型探索儿童认知能力的结构与发展"
+    "section": "项目经历",
+    "text": "项目经历\n国自然面上重点项目《学习与记忆终生发展的机制与干预》  参与人 2014年9月 — 2015年7月\n\n负责行为数据的采集工作，实现数据的自动化收集\n负责生成自动化数据分析报告，并进行数据可视化\n\n参与国自然面上重点项目《熟能生巧:记忆练习效应的神经机制及应用》  参与人 2017年8月 — 2022年7月\n\n负责设计与开发实验任务，实现互联网测评系统\n负责行为数据分析，并参与撰写项目结题报告"
   },
   {
-    "objectID": "cv-cn.html#专业技能",
-    "href": "cv-cn.html#专业技能",
+    "objectID": "cv-cn.html#发表论文",
+    "href": "cv-cn.html#发表论文",
     "title": "个人简历",
-    "section": "专业技能",
-    "text": "专业技能\n\n统计分析：熟练使用R、Python进行数据分析，熟悉线性混合效应模型、结构方程模型和贝叶斯统计建模等\n脑成像技术：熟悉磁共振成像技术，会独立完成数据预处理和分析"
-  },
-  {
-    "objectID": "cv-cn.html#论文发表",
-    "href": "cv-cn.html#论文发表",
-    "title": "个人简历",
-    "section": "论文发表",
-    "text": "论文发表\nZhang, L., Feng, J., Xue, G*. (In preparation). The structure of human cognitive abilities: A study with comprehensive cognitive tasks.\nSheng, J.#, Zhang, L.#, Xue, G*. (In preparation). Shared and individualized representational transformations support episodic memory formation.\nZhang, L., Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G*. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510 (IF: 3.7, SCI二区)\nSheng, J., Wang, S., Zhang, L., Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G*. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120 (IF: 11.1, SCI一区)\nFeng, J., Zhang, L., Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G*. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0 (IF: 16.6, SCI一区)\nSheng, J., Zhang, L., Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G*. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829 (IF: 13.6, SCI一区)\n# 共同第一作者；* 通讯作者"
+    "section": "发表论文",
+    "text": "发表论文\nZhang, L., Feng, J., Xue, G*. (In preparation). The structure of human cognitive abilities: A study with comprehensive cognitive tasks.\nSheng, J.#, Zhang, L.#, Xue, G*. (In preparation). Shared and individualized representational transformations support episodic memory formation.\nZhang, L., Feng, J., Liu, C., Hu, H., Zhou, Y., Yang, G., Peng, X., Li, T., Chen, C., & Xue, G*. (2024). Improved estimation of general cognitive ability and its neural correlates with a large battery of cognitive tasks. Cerebral Cortex, 34(2), bhad510. https://doi.org/10.1093/cercor/bhad510 (IF: 3.7, SCI二区)\nSheng, J., Wang, S., Zhang, L., Liu, C., Shi, L., Zhou, Y., Hu, H., Chen, C., & Xue, G*. (2023). Intersubject similarity in neural representations underlies shared episodic memory content. Proceedings of the National Academy of Sciences, 120(35), e2308951120. https://doi.org/10.1073/pnas.2308951120 (IF: 11.1, SCI一区)\nFeng, J., Zhang, L., Chen, C., Sheng, J., Ye, Z., Feng, K., Liu, J., Cai, Y., Zhu, B., Yu, Z., Chen, C., Dong, Q., & Xue, G*. (2022). A cognitive neurogenetic approach to uncovering the structure of executive functions. Nature Communications, 13(1), 4588. https://doi.org/10.1038/s41467-022-32383-0 (IF: 16.6, SCI一区)\nSheng, J., Zhang, L., Liu, C., Liu, J., Feng, J., Zhou, Y., Hu, H., & Xue, G*. (2022). Higher-dimensional neural representations predict better episodic memory. Science Advances, 8(16), eabm3829. https://doi.org/10.1126/sciadv.abm3829 (IF: 13.6, SCI一区)\n# 共同第一作者；* 通讯作者"
   },
   {
     "objectID": "cv-cn.html#会议海报",
     "href": "cv-cn.html#会议海报",
     "title": "个人简历",
     "section": "会议海报",
-    "text": "会议海报\nZhang, L., Xue, G. The neural substrates of general cognitive ability based on multiple cognitive tasks. Poster presented at the Annual Meeting of the Society for Neuroscience, November 2023, Washington, DC. USA.\n\n\nCreated based on tutorial of https://www.cynthiahqy.com/posts/cv-html-pdf/"
+    "text": "会议海报\nZhang, L., Xue, G. The neural substrates of general cognitive ability based on multiple cognitive tasks. Poster presented at the Annual Meeting of the Society for Neuroscience, November 2023, Washington, DC. USA."
+  },
+  {
+    "objectID": "cv-cn.html#专业技能",
+    "href": "cv-cn.html#专业技能",
+    "title": "个人简历",
+    "section": "专业技能",
+    "text": "专业技能\n\n编程语言：R，Python，Matlab\n统计分析：机器学习，线性混合效应模型、结构方程模型和贝叶斯统计建模等\n脑成像技术：熟悉磁共振成像技术，会独立完成数据预处理与脑网络建模分析\n\n\n\nCreated based on tutorial of https://www.cynthiahqy.com/posts/cv-html-pdf/"
   },
   {
     "objectID": "cv.html",
