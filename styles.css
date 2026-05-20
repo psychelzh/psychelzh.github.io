@@ -1,14 +1,39 @@
 /* css styles */
 
+.navbar-container {
+  gap: 0.35rem;
+}
+
+.navbar-container #quarto-search {
+  order: 2;
+}
+
+.navbar-container .quarto-navbar-tools {
+  align-items: center;
+  display: flex;
+  order: 3;
+}
+
+.navbar-container .navbar-toggler {
+  order: 4;
+}
+
+.navbar-container .navbar-collapse {
+  order: 5;
+}
+
 .quarto-navbar-tools .quarto-color-scheme-toggle {
   align-items: center;
   border: 1px solid currentColor;
   border-radius: 999px;
   display: inline-flex;
   gap: 0.25rem;
+  height: 2rem;
+  justify-content: center;
   margin-left: 0.35rem;
+  min-width: 3.9rem;
   opacity: 0.9;
-  padding: 0.25rem 0.55rem !important;
+  padding: 0 0.6rem !important;
 }
 
 .quarto-navbar-tools .quarto-color-scheme-toggle::after {
