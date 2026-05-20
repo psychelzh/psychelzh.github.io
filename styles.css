@@ -1,1 +1,23 @@
 /* css styles */
+
+.quarto-navbar-tools .quarto-color-scheme-toggle {
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-left: 0.35rem;
+  opacity: 0.9;
+  padding: 0.25rem 0.55rem !important;
+}
+
+.quarto-navbar-tools .quarto-color-scheme-toggle::after {
+  content: "主题";
+  font-size: 0.85rem;
+}
+
+.quarto-navbar-tools .quarto-color-scheme-toggle:hover,
+.quarto-navbar-tools .quarto-color-scheme-toggle:focus {
+  opacity: 1;
+  text-decoration: none;
+}
