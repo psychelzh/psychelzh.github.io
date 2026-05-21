@@ -37,8 +37,15 @@
 }
 
 .quarto-navbar-tools .quarto-color-scheme-toggle::after {
-  content: "主题";
   font-size: 0.85rem;
+}
+
+body.quarto-light .quarto-navbar-tools .quarto-color-scheme-toggle::after {
+  content: "暗色";
+}
+
+body.quarto-dark .quarto-navbar-tools .quarto-color-scheme-toggle::after {
+  content: "亮色";
 }
 
 .quarto-navbar-tools .quarto-color-scheme-toggle:hover,
