@@ -10,8 +10,8 @@ website:
       - cv-cn.qmd
       - icon: github
         href: https://github.com/psychelzh
-      - icon: twitter
-        href: https://twitter.com/psychelzh
+      - icon: twitter-x
+        href: https://x.com/psychelzh
 format:
   html:
     theme:

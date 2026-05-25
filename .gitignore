@@ -1,7 +1,5 @@
-.Rproj.user
 .Rhistory
 .RData
-.Ruserdata
 .Rdata
 .httr-oauth
 .DS_Store
@@ -12,3 +10,5 @@
 /_*.local
 
 _site
+
+**/*.quarto_ipynb

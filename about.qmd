@@ -4,9 +4,9 @@ image: profile.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/psychelzh
+    - icon: twitter-x
+      text: X
+      href: https://x.com/psychelzh
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/psychelzh/
@@ -15,4 +15,17 @@ about:
       href: https://github.com/psychelzh
 ---
 
-Hello, I am Liang, Zhang, a Ph.D just graduated from Beijing Normal University. This is my personal blog for my everyday thoughts and coding discoveries.
+Hello, I am Liang Zhang.
+
+I am currently a Lecturer at the College of Education, China West Normal University. I received my Ph.D. in Cognitive Neuroscience from Beijing Normal University.
+
+## Research Interests
+
+- Cognitive abilities and individual differences
+- Psychometrics and latent variable modeling
+- Brain networks and cognitive neuroscience
+- Reproducible data analysis with R
+
+## About This Site
+
+This blog is where I share notes on research, methods, and coding practices that I find useful in everyday work.
