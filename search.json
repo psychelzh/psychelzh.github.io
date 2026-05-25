@@ -4,7 +4,21 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hello, I am Liang, Zhang, a Ph.D just graduated from Beijing Normal University. This is my personal blog for my everyday thoughts and coding discoveries."
+    "text": "Hello, I am Liang Zhang.\nI am currently a Lecturer at the College of Education, China West Normal University. I received my Ph.D. in Cognitive Neuroscience from Beijing Normal University."
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nCognitive abilities and individual differences\nPsychometrics and latent variable modeling\nBrain networks and cognitive neuroscience\nReproducible data analysis with R"
+  },
+  {
+    "objectID": "about.html#about-this-site",
+    "href": "about.html#about-this-site",
+    "title": "About",
+    "section": "About This Site",
+    "text": "About This Site\nThis blog is where I share notes on research, methods, and coding practices that I find useful in everyday work."
   },
   {
     "objectID": "cv.html",
